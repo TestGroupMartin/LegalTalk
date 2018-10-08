@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_foot_above"
+        android:layout_marginBottom="0dp"></android.support.v4.view.ViewPager>
+
+    <TextView
+        android:id="@+id/main_foot_above"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_above="@+id/main_foot"
+        android:background="#eee" />
+
+    <LinearLayout
+        android:id="@+id/main_foot"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="3dp">
+
+        <FrameLayout
+            android:id="@+id/main_foot_bar1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/main_foot_text1"
+                style="@style/MainBar"
+                android:alpha="0"
+                android:drawableTop="@drawable/main_homepage"
+                android:text="律师管"
+                android:textColor="@color/colorUnSelect" />
+
+            <TextView
+                android:id="@+id/main_foot_text11"
+                style="@style/MainBar"
+                android:drawableTop="@drawable/main_homepage_selected"
+                android:text="律师管"
+                android:textColor="@color/colorSelect" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/main_foot_bar2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/main_foot_text2"
+                style="@style/MainBar"
+                android:drawableTop="@drawable/main_search"
+                android:text="找律师"
+                android:textColor="@color/colorUnSelect" />
+
+            <TextView
+                android:id="@+id/main_foot_text22"
+                style="@style/MainBar"
+                android:alpha="0"
+                android:drawableTop="@drawable/main_search_selected"
+                android:text="找律师"
+                android:textColor="@color/colorSelect" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/main_foot_bar3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/main_foot_text3"
+                style="@style/MainBar"
+                android:drawableTop="@drawable/main_news"
+                android:text="消息"
+                android:textColor="@color/colorUnSelect" />
+
+            <TextView
+                android:id="@+id/main_foot_text33"
+                style="@style/MainBar"
+                android:alpha="0"
+                android:drawableTop="@drawable/main_news_selected"
+                android:text="消息"
+                android:textColor="@color/colorSelect" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/main_foot_bar4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/main_foot_text4"
+                style="@style/MainBar"
+                android:drawableTop="@drawable/main_me"
+                android:text="我"
+                android:textColor="@color/colorUnSelect" />
+
+            <TextView
+                android:id="@+id/main_foot_text44"
+                style="@style/MainBar"
+                android:alpha="0"
+                android:drawableTop="@drawable/main_me_selected"
+                android:text="我"
+                android:textColor="@color/colorSelect" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
